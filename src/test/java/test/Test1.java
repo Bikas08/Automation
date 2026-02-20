@@ -17,7 +17,7 @@ import com.microsoft.playwright.options.AriaRole;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class test1 {
+public class Test1 {
     
     
 //        public static void main(String[] args) throws InterruptedException {
