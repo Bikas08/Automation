@@ -1,10 +1,12 @@
 package test;
 
 import com.microsoft.playwright.*;
-	            import com.microsoft.playwright.options.*;
-	            import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-	            import java.util.*;
+import com.microsoft.playwright.options.*;
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import java.util.*;
 import java.util.regex.Pattern;
+
+import org.junit.jupiter.api.Test;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
@@ -16,10 +18,12 @@ import com.microsoft.playwright.options.AriaRole;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class test1 {
-	
-	
-	    public static void main(String[] args) throws InterruptedException {
-	        try (Playwright playwright = Playwright.create()) {
+    
+    
+//        public static void main(String[] args) throws InterruptedException {
+	@Test
+			public void test() {
+            try (Playwright playwright = Playwright.create()) {
 //	            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 //	            Page page = browser.newPage();
 //	            BrowserContext context = browser.newContext(new Browser.NewContextOptions()
@@ -80,18 +84,11 @@ public class test1 {
 	                      cookieBtn.first().click();
 	                  }
 	                  page.locator("text=Contact Sales").nth(2).scrollIntoViewIfNeeded();
-                                                                                               	                  
-	                  
-	        		
-	        		
-	        		
-	        
-	              }
-	            
-	        
-	    
-	    }
+                                                                                                	                  
+                  
+            
+              }
+            
+        
+    }
 }
-	
-
-
